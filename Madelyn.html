@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madelyn Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <h1>Madelyn Gallery</h1>
+    <div id="gallery"></div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <span class="modal-nav prev"><</span>
+        <span class="modal-nav next">></span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="">
+            <video id="modal-video" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script src="Madelyn.js"></script>
+</body>
+</html>
