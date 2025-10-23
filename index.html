@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeb Gallery Home</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h1>Celeb Gallery</h1>
+    <div id="directory-grid">
+        <div class="directory-item" onclick="window.location.href='Alia.html'">
+            <img src="Alia/alia.jpg" alt="Alia">
+            <p>Alia</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Ass.html'">
+            <img src="Ass/10.jpg" alt="Ass">
+            <p>Ass</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Boobs.html'">
+            <img src="Boobs/4.png" alt="Boobs">
+            <p>Boobs</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Brook.html'">
+            <img src="Brook/3a49d5824185f3554fb7fe90dbe22182.jpg" alt="Brook">
+            <p>Brook</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Disha.html'">
+            <img src="Disha/365753011.jpg" alt="Disha">
+            <p>Disha</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Kiara.html'">
+            <img src="Kiara/10.jpg" alt="Kiara">
+            <p>Kiara</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Madelyn.html'">
+            <img src="Madelyn/1c186c0a88d5f2e5dafd571c304794d1.jpg" alt="Madelyn">
+            <p>Madelyn</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Margot.html'">
+            <img src="Margot/RDT_20240607_1515062625718049493944752.jpg" alt="Margot">
+            <p>Margot</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Millie.html'">
+            <img src="Millie/7e03bd3513f80b4ef55ed2bb640b347c.jpg" alt="Millie">
+            <p>Millie</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Munn.html'">
+            <img src="Munn/Olivia-Munn-Esquire-6.jpg" alt="Munn">
+            <p>Munn</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Olivia.html'">
+            <img src="Olivia/olivia.png" alt="Olivia">
+            <p>Olivia</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Swimsuit-Illustrated.html'">
+            <img src="Swimsuit Illustrated/gigi-hadid-2016-web-x159793_tk2_00684-rawwmfinal1920jpg.jpg.jpeg" alt="Swimsuit Illustrated">
+            <p>Swimsuit Illustrated</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Syd.html'">
+            <img src="Syd/main.jpg" alt="Syd">
+            <p>Syd</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='kate.html'">
+            <img src="kate/main.jpg" alt="Kate">
+            <p>Kate</p>
+        </div>
+        <div class="directory-item" onclick="window.location.href='Celebsex.html'">
+            <img src="Celebsex/s.png" alt="Celebsex">
+            <p>Celebsex</p>
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="navigate(-1)">← Previous</button>
+        <button class="nav-btn" onclick="navigate(1)">Next →</button>
+    </div>
+    <script>
+        const directories = ['Alia', 'Ass', 'Boobs', 'Brook', 'Disha', 'Kiara', 'Madelyn', 'Margot', 'Millie', 'Munn', 'Olivia', 'Swimsuit-Illustrated', 'Syd', 'kate', 'Celebsex'];
+        let currentIndex = 0;
+
+        function navigate(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = directories.length - 1;
+            if (currentIndex >= directories.length) currentIndex = 0;
+            window.location.href = directories[currentIndex] + '.html';
+        }
+    </script>
+</body>
+</html>
